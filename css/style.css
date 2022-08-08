@@ -1,0 +1,370 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  font-family: 'Didact Gothic';
+}
+nav {
+  float: right;
+}
+.navigation {
+  height: 70px;
+  background: #5eb299;
+  position: sticky;
+  z-index: 1;
+  top:0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+.nav-container {
+  margin: auto;
+}
+
+.brand img{
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  line-height: 70px;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li p {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0 5px;
+  color: #ffffff;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #aad4c8;
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+  color: #5eb299;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #5eb299;
+  height: 70px;
+  width: 70px;
+}
+.detail-section{
+  padding: 5%;
+}
+
+.banner{
+  background-image: url(../images/dragokart_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pheading{
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+  color: black;
+  font-size: 2.5rem;
+}
+
+/* Products */
+
+.sec{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px 2%;
+}
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.products .card{
+  width: 250px;
+  background: #f5f5f5;
+  box-shadow: #5eb299 0px 3px 8px;
+    border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.products .card img{
+  height: 220px;
+  margin-left: 5%;
+  width: 90%;
+}
+.products .card .desc{
+  padding: 5px 20px;
+  opacity: 0.8;
+}
+.products .card .title{
+  font-weight: 900;
+  font-size: 20px;
+  color: #424144;
+  padding: 0 20px;
+}
+.products .card .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.products .card .box .price{
+  color: #f63e4e;
+  font-size: 16px;
+  font-weight: bold;
+}
+.products .card .box .mrp{
+  color: #5eb299;
+  opacity: 0.5;
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.products .card .box .btn{
+  font-size: 13px;
+  color: #5eb299;
+  padding: 10px 18px;
+  font-weight: 900;
+  border: 1px solid #5eb299;
+  border-radius: 20px;
+}
+.products .card .box .btn:hover{
+  cursor: pointer;
+  background-color: #5eb299;
+  color: white;
+}
+
+/*footer*/
+
+.bg-grey {
+  background: #5eb299;
+}
+.logo-footer {
+  margin-bottom: 40px;
+}
+footer {
+      color: rgb(255, 255, 255);
+}
+footer p, a {
+font-size: 12px;
+font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+font-family: 'Playfair Display', serif;
+margin-bottom: 40px;
+position: relative;
+}
+footer h6:after {
+position: absolute;
+content: "";
+background: rgb(255, 255, 255);
+width: 12%;
+height: 1px;
+left: 0;
+bottom: -20px;
+}
+.btn-footer {
+           color: rgb(255, 255, 255);
+        
+          text-decoration: none;
+          border: 1px solid;
+          border-radius: 43px;
+          font-size: 13px;
+          padding: 7px 30px;
+          line-height: 47px;
+}
+.btn-footer:hover {
+          
+          text-decoration: none;
+         
+}
+.form-footer input[type="text"] {
+  border: none;
+border-radius: 16px 0 0 16px;
+outline: none;
+padding-left: 10px;
+
+}
+::placeholder {
+font-size: 10px;
+padding-left: 10px;
+font-style: italic;
+}
+.form-footer input[type="button"] {
+border: none;
+background:#ffffff;
+  margin-left: -5px;
+color: rgb(0, 0, 0);
+outline: none;
+border-radius: 0 16px 16px 0;
+padding: 2px 12px;
+}
+.social .fa {
+color: rgb(255, 255, 255);
+font-size: 22px;
+padding: 10px 15px;
+background: black;
+}
+footer ul li {
+list-style: none;
+display: block;
+}
+footer ul  {
+padding-left: 0;
+}
+footer ul  li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+text-decoration:none;
+}
+a:hover {
+text-decoration: none;
+color: #f5f5f5 !important;
+
+}
+.logo-part {
+border-right: 1px solid rgb(255, 255, 255);
+height: 100%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+    z-index: 2;
+  }
+  nav ul li a:hover {
+    background: #aad4c8;
+    color: #ffffff;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 15px;    
+  }
+  nav ul {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #f5f5f5;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a{
+    padding: 58px;
+    line-height: 20px;
+    color: #5eb299;
+    font-size: 2.2rem;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+@media (max-width: 574px) {
+	.products{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 0.5fr));
+  }
+  .sec{
+    margin-left: 30px;
+  }
+  .products .card{
+    width: 200px;
+    padding: 0;
+  }
+  .products .card img{
+    height: 170px;
+  }
+}
+
+@media (max-width: 407px) {
+  .pheading{
+    padding: 5%;
+}
+}
