@@ -160,9 +160,12 @@ nav ul li ul li a {
   font-size: 13px;
   color: #5eb299;
   padding: 10px 18px;
-  font-weight: 900;
+  font-weight: 800;
   border: 1px solid #5eb299;
   border-radius: 20px;
+}
+.products .card .box .btn a{
+  color:inherit;
 }
 .products .card .box .btn:hover{
   cursor: pointer;
